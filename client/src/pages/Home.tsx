@@ -1,4 +1,5 @@
 import { useState, useEffect, useLayoutEffect } from "react";
+import { Link } from 'react-router-dom';
 import { retrieveUsers } from "../api/userAPI";
 import type { UserData } from "../interfaces/UserData";
 import ErrorPage from "./ErrorPage";
@@ -45,10 +46,14 @@ const Home = () => {
         <>
             {
                 !loginCheck ? (
-                    <div>
-                        <h1>
-                            Login to view your list!
-                        </h1>
+                    <div className="centered">
+                        <div className="landing">
+                        <Link className="link" to='/login'>
+                            <h2>
+                                Login to view your list!
+                            </h2>
+                        </Link>
+                        </div>
                     </div>
                 ) : (
                     <UserList users={users} />

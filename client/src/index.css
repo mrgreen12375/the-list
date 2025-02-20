@@ -1,0 +1,83 @@
+body {
+  font-family: "Grechen Fuemen";
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link h2:hover {
+  border-bottom: 2px solid black;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 30%;
+  background-image: url("https://cdn.pixabay.com/photo/2014/02/09/23/41/notepad-263217_1280.jpg");
+  background-position: 50% 0%;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.loginButton button {
+  background-color: white;
+  color: black;
+  padding: 5px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Grechen Fuemen";
+}
+
+.loginButton button:hover {
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+}
+
+.loginButton button a {
+  font-family: "Grechen Fuemen";
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.login input {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+}

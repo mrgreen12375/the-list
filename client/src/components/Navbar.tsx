@@ -17,9 +17,9 @@ const Navbar = () => {
   }, [loginCheck]);
 
   return (
-    <div>
+    <div className='header'>
       <h1>The List</h1>
-      <div>
+      <div className='loginButton'>
         {!loginCheck ? (
           <button type='button'>
             <Link to='/login'>Login</Link>
