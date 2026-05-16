@@ -7,7 +7,7 @@ Grocery List
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contribution](#Contributing)
-- [Diployment Links](#Questions)
+- [Diployment Links](#Contributing)
 
 ## Installation
 npm install
