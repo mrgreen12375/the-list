@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.landing {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 400px;
+}
+
+#listContainer img {
+  height: 25px;
+}
+
+#listContainer p {
+  font-size: 25px;
+}
