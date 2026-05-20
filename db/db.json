@@ -1,6 +1,14 @@
 [
     {
-        "id": "1",
-        "text": "This is a sample item"
+        "id": "60aebc06-5061-4032-9771-fb0b6158a9d0",
+        "text": "Milk"
+    },
+    {
+        "id": "d22bb53f-16d6-49b8-806e-a1069ed34e61",
+        "text": "Bread"
+    },
+    {
+        "id": "fc3bdcc7-b8bd-4233-b75f-a5ef444ffe4e",
+        "text": "Hotdogs"
     }
 ]

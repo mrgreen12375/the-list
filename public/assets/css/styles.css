@@ -21,6 +21,11 @@ main {
 
 #listContainer {
   display: flex;
+  flex-direction: column;
+}
+
+#listContainer div {
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
