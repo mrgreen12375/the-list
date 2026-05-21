@@ -1,14 +1,17 @@
 [
     {
-        "id": "60aebc06-5061-4032-9771-fb0b6158a9d0",
-        "text": "Milk"
+        "id": "29811d40-240b-43a2-a16a-e1979da16ce9",
+        "text": "Milk",
+        "checked": false
     },
     {
-        "id": "d22bb53f-16d6-49b8-806e-a1069ed34e61",
-        "text": "Bread"
+        "id": "f4f71c80-ca6d-4492-886c-bb466bb2dffd",
+        "text": "Butter",
+        "checked": false
     },
     {
-        "id": "fc3bdcc7-b8bd-4233-b75f-a5ef444ffe4e",
-        "text": "Hotdogs"
+        "id": "5022c4ab-655a-4303-ba84-7897e8c2151b",
+        "text": "Hotdogs",
+        "checked": false
     }
 ]

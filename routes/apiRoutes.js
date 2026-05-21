@@ -11,10 +11,10 @@ item.get('/list', (req, res) => {
 item.get('/list/:id', (req, res) => {
     readFromFile('./db/db.json').then((data) => {
         const parsedData = JSON.parse(data);
-        const result = parsedData.filter(note => note.id === req.params.id);
+        const result = parsedData.filter(list => list.id === req.params.id);
         return result.length > 0
             ? res.json(result)
-            : res.json('No note with that ID');
+            : res.json('No item with that ID');
     });
 });
 
@@ -43,12 +43,31 @@ item.post('/list', (req, res) => {
       const newItem = {
         id: uuid.v4(),
         text,
+        checked: false,
       };
       readAndAppend(newItem, './db/db.json');
       res.json(newItem);
     } else {
       res.error('Error in adding note');
     }
+});
+
+item.put('/list/:id', function(req, res) {
+    fs.readFile('./db/db.json', 'utf-8',(err,data)=>{
+      if(err){
+        console.error(err)
+      }else{
+        let parsedData = JSON.parse(data)
+        parsedData = parsedData.map((item) => {
+          if (item.id === req.params.id) {
+            return { ...item, text: req.body.text, checked: req.body.checked };
+          }
+          return item;
+        });
+        fs.writeFile('./db/db.json', JSON.stringify(parsedData, null, 4), (err) =>
+        err ? console.error(err) : res.json('writeFile'))
+      }
+    });
 });
 
 item.delete("/list/:id", function(req, res) {

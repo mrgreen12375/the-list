@@ -34,8 +34,10 @@ main {
 
 #listContainer img {
   height: 25px;
+  cursor: pointer;
 }
 
 #listContainer p {
   font-size: 25px;
+  cursor: pointer;
 }
