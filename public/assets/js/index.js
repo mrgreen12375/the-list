@@ -18,10 +18,12 @@ const getList = () =>
         data.forEach((item) => {
           const listEl = document.createElement('div');
           const listText = document.createElement('p');
+          const updateEl = document.createElement('div');
           const listDelete = document.createElement('img');
           const listEdit = document.createElement('img');
   
           listEl.dataset.id = item.id;
+          listEl.classList.add('listEl');
   
           listText.textContent = item.text;
           listText.style.textDecoration = item.checked ? 'line-through' : 'none';
@@ -35,8 +37,9 @@ const getList = () =>
   
           listContainer.appendChild(listEl);
           listEl.appendChild(listText);
-          listEl.appendChild(listDelete);
-          listEl.appendChild(listEdit);
+          listEl.appendChild(updateEl);
+          updateEl.appendChild(listDelete);
+          updateEl.appendChild(listEdit);
         });
       });
   };
@@ -86,14 +89,13 @@ const putList = (id, updates) => {
 }
 
 const editList = (e) => {
-  const itemId = e.target.parentElement.dataset.id;
-  const itemText = e.target.parentElement.querySelector('p').textContent;
+  const itemId = e.target.closest('.listEl').dataset.id;
+  const itemText = e.target.closest('.listEl').querySelector('p').textContent;
 
   listInput.value = itemText;
-
   editingId = itemId;
 
-  listButton.textContent = 'Edit';
+  listButton.textContent = 'Update';
 };
 
 const deleteList = (id) => {
@@ -103,7 +105,7 @@ const deleteList = (id) => {
 }
 
 const deleteFromList = (e) => {
-  const itemId = e.target.parentElement.dataset.id;
+  const itemId = e.target.closest('.listEl').dataset.id;
   deleteList(itemId);
 };
 

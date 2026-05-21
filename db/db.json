@@ -13,5 +13,14 @@
         "id": "5022c4ab-655a-4303-ba84-7897e8c2151b",
         "text": "Hotdogs",
         "checked": false
+    },
+    {
+        "id": "cbe48c11-b084-47e0-bf06-d0fb6fbffd0e",
+        "text": "Eggs"
+    },
+    {
+        "id": "1579d4eb-b6d2-49b0-a5e8-4fb38692e10a",
+        "text": "Bread",
+        "checked": false
     }
 ]
