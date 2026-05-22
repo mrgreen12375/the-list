@@ -1,26 +1,7 @@
 [
     {
         "id": "29811d40-240b-43a2-a16a-e1979da16ce9",
-        "text": "Milk",
-        "checked": false
-    },
-    {
-        "id": "f4f71c80-ca6d-4492-886c-bb466bb2dffd",
-        "text": "Butter",
-        "checked": false
-    },
-    {
-        "id": "5022c4ab-655a-4303-ba84-7897e8c2151b",
-        "text": "Hotdogs",
-        "checked": false
-    },
-    {
-        "id": "cbe48c11-b084-47e0-bf06-d0fb6fbffd0e",
-        "text": "Eggs"
-    },
-    {
-        "id": "1579d4eb-b6d2-49b0-a5e8-4fb38692e10a",
-        "text": "Bread",
+        "text": "Sample Item",
         "checked": false
     }
 ]

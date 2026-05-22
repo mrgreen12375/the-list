@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Share Tech', sans-serif;
-  background-color: rgb(165, 200, 199);
+  background-color: rgb(147, 198, 186);
 
 }
 
@@ -36,29 +36,34 @@ main {
 }
 
 .landing a {
-  padding: 15px;
+  padding: 30px 50px;  
   color: white;
   border-radius: 5px;
   border: 2px solid black;
-  background-color: rgb(36 181 230);
   text-decoration: none;
   font-size: 20px;
+  background: url('../images/button.png') center/100% 100% no-repeat;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .landing a:hover {
   cursor: pointer;
-  background-color: rgb(138, 199, 220);
 }
 
 #listForm {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 20px;
 }
 
 #listInput {
   padding: 10px;
-  border-radius: 5px 0px 0px 5px;
+  border: 2px solid black;
+  border-radius: 5px;
   text-align: center;
   font-family: 'Share Tech', sans-serif;
   background-color: rgb(231, 231, 231);
@@ -66,18 +71,21 @@ main {
 }
 
 #listButton {
-  padding: 10px;
+  margin-left: -10px;
+  padding: 20px 40px;
   color: white;
-  border-left: none;
   border-radius: 0px 5px 5px 0px;
-  background-color: rgb(36 181 230);
   text-align: center;
   font-family: 'Share Tech', sans-serif;
+  background: url('../images/button.png') center/100% 100% no-repeat;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 #listButton:hover {
   cursor: pointer;
-  background-color: rgb(138, 199, 220);
 }
 
 #listContainer {
@@ -100,7 +108,6 @@ main {
 }
 
 #listContainer img {
-  height: 20px;
+  height: 40px;
   cursor: pointer;
-  margin-left: 10px;
 }
